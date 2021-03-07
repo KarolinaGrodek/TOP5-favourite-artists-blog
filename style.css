@@ -1,5 +1,116 @@
 body
 {
-  background-color: #333333;
+  background-color: #302d2f;
   color: white;
+  font-family: 'Dosis', sans-serif; /*from gooogle fonts*/
+  margin: 0 !important;
 }
+#logo
+{
+  background-color: #794a5c;
+  margin: 0px;
+  font-size: 40px;
+  text-transform: lowercase;
+  padding: 30px;
+  letter-spacing: 6px;
+  text-align: center;
+}
+#container
+{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 1200px;
+  height: 600px;
+  font-weight: 200;
+  font-size: 17px;
+  
+}
+#sidebar
+{
+  float: left;
+  width: 220px;
+  padding: 10px;
+  text-align: right;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: rgb(223, 198, 166);
+  
+  }
+#content
+{
+  float: left;
+  width: 940px;
+  margin-top: 30px;
+}
+h1
+{
+  background-color: rgb(223, 198, 166);
+  color: #794a5c;
+  letter-spacing: 4px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0;
+  text-align: center;
+  font-weight: 400;
+}
+h2
+{
+  font-weight: 300;
+}
+.article
+{
+  background-color: #794a5c;
+  margin: 10px;
+  padding: 10px 15px 10px 15px;
+}
+.tile1
+{
+  float: left;
+  margin: 15px;
+  padding-right: 15px;
+  border-right: 1px dashed;
+  font-size: 18px;
+}
+.tile2
+{
+  float: left;
+  width: 600px;
+  text-align: justify;
+}
+ol
+{
+  list-style-type: none;
+  padding-left: 10px;
+  padding-right: 15px;
+}
+ol > li
+{
+  padding-bottom: 7px;
+}
+ul 
+{
+  list-style-type: none;
+  padding-left: 15px;
+  padding-top: 0px;
+}
+ul > li:before
+{
+  content: "♪  ";
+}
+.source
+{
+  text-align: right;
+  color: rgba(255, 255, 255, 0.562);
+
+}
+.links
+{
+  color: white;
+  text-decoration: none;
+}
+.links:hover
+{
+  color: rgb(223, 198, 166);
+}
+
