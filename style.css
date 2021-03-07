@@ -21,7 +21,6 @@ body
   margin-right: auto;
   margin-top: 10px;
   width: 1200px;
-  height: 600px;
   font-weight: 200;
   font-size: 17px;
   
@@ -101,7 +100,6 @@ ul > li:before
 .source
 {
   text-align: right;
-  color: rgba(255, 255, 255, 0.562);
 
 }
 .links
