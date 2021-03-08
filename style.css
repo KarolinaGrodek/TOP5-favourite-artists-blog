@@ -9,9 +9,10 @@ body
 {
   background-color: #794a5c;
   margin: 0px;
+  margin-top: 25px;
   font-size: 40px;
   text-transform: lowercase;
-  padding: 30px;
+  padding: 35px;
   letter-spacing: 6px;
   text-align: center;
 }
@@ -19,7 +20,6 @@ body
 {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
   width: 1200px;
   font-weight: 200;
   font-size: 17px;
@@ -111,4 +111,22 @@ ul > li:before
 {
   color: rgb(223, 198, 166);
 }
-
+#footer
+{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 200;
+  background-color: rgb(223, 198, 166);
+  color:#794a5c;
+  padding: 20px;
+  letter-spacing: 10px;
+}
+#g-link
+{
+  text-decoration: none;
+  color: #794a5c;
+}
+#g-link:hover
+{
+  color: #302d2f;
+}
