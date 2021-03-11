@@ -13,6 +13,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
 <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;500&display=swap" rel="stylesheet">
     
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <script src="jquery.scrollTo.min.js"></script>
+      
+      <script>
+         jQuery(function($)
+         {
+            //zresetuj scrolla
+            $.scrollTo(0);
+            
+            $('#link1').click(function() {$.scrollTo($('#billie'),1000);});
+            $('#link2').click(function() {$.scrollTo($('#5sos'),1000);});
+            $('#link3').click(function() {$.scrollTo($('#zayn'),1000);});
+            $('#link4').click(function() {$.scrollTo($('#ed'),1000);});
+            $('#link5').click(function() {$.scrollTo($('#ID'),1000);});
+            
+
+
+            $('.scrollup').click(function() {$.scrollTo($('body'),1000);});
+         }
+         );
+
+      //pokaz podczas przewijania
+      $(window).scroll(function()
+      {
+         if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+         else $('.scrollup').fadeOut();
+      }
+      );
+      </script>
   </head>
   
   <body>
@@ -22,19 +52,21 @@
     </div>
     
     <div id="container">
+    
+      <a href="#" class="scrollup"></a>
       
       <div id="sidebar">
         <ol>
-          <li>Billie Eilish</li>
-          <li>5 Seconds of Summer</li>
-          <li>Zayn</li>
-          <li>Ed Sheeran</li>
-          <li>Imagine Dragons</li>
+          <li><a id="link1" href="#" class="sidebarlinks">Billie Eilish</a></li>
+          <li><a id="link2" href="#" class="sidebarlinks">5 Seconds of Summer</a></li>
+          <li><a id="link3" href="#" class="sidebarlinks">Zayn</a></li>
+          <li><a id="link4" href="#" class="sidebarlinks">Ed Sheeran</a></li>
+          <li><a id="link5" href="#" class="sidebarlinks">Imagine Dragons</a></li>
         </ol>
       </div>
       
       <div id="content">
-        <h1>Billie Eilish</h1>
+        <h1 id="billie">Billie Eilish</h1>
         <div class="article">
           <div class="tile1">
             <a href="https://www.instagram.com/billieeilish/" target="_blank" title="instagram.com"><img src="img/BillieEilish.jpeg"/></a>
@@ -55,7 +87,7 @@
           <div style="clear: both;"></div>
         </div>
 
-        <h1>5 Seconds of Summer</h1>
+        <h1 id="5sos">5 Seconds of Summer</h1>
         <div class="article">
           <div class="tile1">
             <a href="https://www.instagram.com/5sos/" target="_blank" title="instagram.com"><img src="img/5sos.jpeg"/></a>
@@ -80,7 +112,7 @@
           <div style="clear: both;"></div>
         </div>
         
-        <h1>Zayn</h1>
+        <h1 id="zayn">Zayn</h1>
         <div class="article">
           <div class="tile1">
           <a href="https://www.instagram.com/zayn/" target="_blank" title="instagram.com"><img src="img/Zayn.jpeg"/></a>
@@ -106,7 +138,7 @@
 
         </div>
 
-        <h1>Ed Sheeran</h1>
+        <h1 id="ed">Ed Sheeran</h1>
         <div class="article">
           <div class="tile1">
           <a href="https://www.instagram.com/teddysphotos/" target="_blank" title="instagram.com"><img src="img/ed.jpeg"/></a>
@@ -133,7 +165,7 @@
           <div style="clear: both;"></div>
           </div>
 
-          <h1>Imagine Dragons</h1>
+          <h1 id="ID">Imagine Dragons</h1>
         <div class="article">
           <div class="tile1">
           <a href="https://www.instagram.com/imaginedragons/" target="_blank" title="instagram.com"><img src="img/ID.jpeg"/></a>
@@ -166,8 +198,8 @@
     </div>
     <div style="clear: both;"></div>
     <div id="footer">
-      &copy; KAROLINA GRÓDEK 2021 ⥤ <a href="https://github.com/KarolinaGrodek" target="_blank" id="g-link">GitHub</a> ⥤ <a href="https://www.linkedin.com/in/karolina-gródek-554b82201/" target="_blank" id="g-link">Linkedin</a>
+      <span style="font-size: 24px;">&copy;</span> KAROLINA GRÓDEK 2021 ⥤ <a href="https://github.com/KarolinaGrodek" target="_blank" id="g-link">GitHub</a> ⥤ <a href="https://www.linkedin.com/in/karolina-gródek-554b82201/" target="_blank" id="g-link">Linkedin</a>
     </div>
-    
+
   </body>
 </html>
