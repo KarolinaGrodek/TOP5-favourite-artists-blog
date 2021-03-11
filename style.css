@@ -33,7 +33,6 @@ body
   text-align: right;
   font-size: 18px;
   letter-spacing: 2px;
-  color: rgb(223, 198, 166);
   
   }
 #content
@@ -129,4 +128,26 @@ ul > li:before
 #g-link:hover
 {
   color: #302d2f;
+  font-weight: 400;
 }
+.sidebarlinks
+{
+  text-decoration: none;
+  color: rgb(223, 198, 166);
+}
+.sidebarlinks:hover
+{
+  font-weight: 400;
+  color: rgb(233, 209, 177);
+  
+}
+.scrollup
+{
+   width: 64px;
+   height: 64px;
+   text-decoration: none;
+   background: url(img/up.png) no-repeat 0px 0px;
+   position: fixed;
+   right: 50px;
+   bottom: 50px;
+   display: none;
